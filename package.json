@@ -1,0 +1,19 @@
+{
+  "name": "spawn-write-stream",
+  "version": "1.0.0",
+  "description": "spawn a subprocess to write to it",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/nathan7/spawn-write-stream.git"
+  },
+  "author": "Nathan Zadoks",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nathan7/spawn-write-stream/issues"
+  },
+  "homepage": "https://github.com/nathan7/spawn-write-stream",
+  "dependencies": {
+    "sprom": "^2.0.0"
+  }
+}
