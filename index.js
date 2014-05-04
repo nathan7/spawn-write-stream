@@ -34,6 +34,7 @@ function spawnWriteStream(bin, args, opts) {
 
   var stderr = sprom(child.stderr)
   child.on('exit', function(code, signal) {
+    stream.emit('exit', code, signal)
     if (errored) return
     if (code === 0 && !signal) return
     stderr.then(function(stderr) {
