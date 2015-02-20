@@ -14,6 +14,6 @@
   },
   "homepage": "https://github.com/nathan7/spawn-write-stream",
   "dependencies": {
-    "sprom": "^2.0.0"
+    "sprom": "^2.1.0"
   }
 }

@@ -36,7 +36,7 @@ function spawnWriteStream(bin, args, opts) {
   child.on('exit', function(code, signal) {
     if (errored) return
     if (code === 0 && !signal) return stream.emit('exit', code, signal)
-    stderr.then(function(stderr) {
+    stderr.done(function(stderr) {
       var err = signal
         ? new Error('`' + name + '` killed by signal `' + signal + '`')
         : new Error('`' + name + '` exited with ' + code)
