@@ -25,6 +25,8 @@ function spawnWriteStream(bin, args, opts) {
     , errored = false
     , stream = child.stdin
 
+  stream.child = child
+
   child.on('error', error)
   function error(err) {
     if (errored) return
